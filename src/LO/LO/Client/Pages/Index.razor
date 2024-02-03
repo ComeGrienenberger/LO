@@ -1,0 +1,7 @@
+﻿@page "/"
+
+<PageTitle> My New App </PageTitle>
+
+@foreach(var task in _tasksApi.GetTasks()){
+    <p> @task.Name </p>
+}
